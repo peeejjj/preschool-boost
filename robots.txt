@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://boost.akindaco.com/sitemap.xml
