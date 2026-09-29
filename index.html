@@ -53,9 +53,17 @@
     .subline span{white-space:nowrap}
     .subline .pipe{margin:0 .45em;opacity:.7}
     .hero{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:16px;display:block;margin:0 0 22px}
-    .glance{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 22px}
-    .glance div{background:var(--sage);color:var(--forest-deep);border-radius:12px;padding:14px 12px;font-size:14px;line-height:1.3;text-align:center}
-    .glance b{display:block;font-family:var(--serif);font-weight:600;font-size:1.7rem;line-height:1.1;margin-bottom:4px;color:var(--forest-deep)}
+    .menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:6px 0 26px}
+    .mcard{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;text-decoration:none;color:var(--forest);transition:border-color .12s ease,transform .12s ease}
+    .mcard:hover{border-color:var(--forest);transform:translateY(-1px)}
+    .mtag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:8px}
+    .mname{font-family:var(--serif);font-weight:500;font-size:1.35rem;line-height:1.15;margin-bottom:10px}
+    .mcard ul{list-style:none;padding:0;margin:0 0 12px;font-size:14.5px;line-height:1.35}
+    .mcard li{padding:5px 0 5px 16px;position:relative;border-top:1px solid var(--line)}
+    .mcard li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:7px;border-radius:50%;background:var(--sage)}
+    .mcard li:last-child{font-weight:700}
+    .mmore{margin-top:auto;font-size:12px;letter-spacing:.11em;text-transform:uppercase;font-weight:700}
+    .mmore::after{content:" \2193"}
     .lede{font-size:1.1rem;text-align:center;max-width:600px;margin:0 auto 1.1em}
     .center{text-align:center}
     .center .btnrow{justify-content:center}
@@ -115,9 +123,11 @@
     .contact a{white-space:nowrap}
     .sr{position:absolute;left:-9999px}
 
+    @media (max-width:760px){
+      .menu{grid-template-columns:1fr}
+    }
     @media (max-width:640px){
       h1{font-size:1.85rem}
-      .glance{grid-template-columns:repeat(2,minmax(0,1fr))}
       .subline .pipe{display:block;height:0;overflow:hidden;margin:0}
       .subline span{display:block;white-space:normal}
       header.site .btn{display:none}
@@ -134,9 +144,11 @@
       h3{font-size:12pt}
       p,ul{margin-bottom:.6em}
       .lede{font-size:10pt}
-      .glance{gap:2mm;margin-bottom:3mm}
-      .glance div{padding:2mm;font-size:8.5pt}
-      .glance b{font-size:14pt}
+      .menu{gap:2mm;margin-bottom:3mm;grid-template-columns:repeat(3,1fr)}
+      .mcard{padding:2.5mm 3mm;border-color:#bbb}
+      .mname{font-size:11pt}
+      .mcard ul{font-size:8pt}
+      .mmore{display:none}
       section{margin-top:4mm}
       .program{margin-top:3mm;padding-top:3mm}
       .units li{padding:1.2mm 0 1.2mm 9mm}
@@ -158,7 +170,7 @@
       details summary::after{display:none}
       details .a{display:block;padding-bottom:1.5mm}
       footer{margin-top:5mm;padding-top:3mm;font-size:8.5pt}
-      .glance div,.note,.units li::before,.steps li::before{background:#e6eddb;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .mcard li::before,.note,.units li::before,.steps li::before{background:#e6eddb;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       .card,.examples div{border-color:#bbb}
       .brand{text-decoration:none}
       .btn{display:none}
@@ -182,14 +194,43 @@
 
   <img class="hero" src="hero.jpg" alt="Four preschool children running along a tree-lined path" width="1500" height="1000" />
 
-  <div class="glance" aria-label="At a glance">
-    <div><b>2</b>programs on the Preschool Boost Menu</div>
-    <div><b data-price="atcdUnit"></b>per training unit, for your whole team</div>
-    <div><b data-price="l2pVisit"></b>per Learn to Play visit</div>
-    <div><b>30 min</b>free planning call before you commit</div>
-  </div>
+  <p class="lede">Three things your Preschool Boost allocation can buy from AkindaCo. Everything is priced per session, not per person, and everything comes to your centre. Start with the booking form, or a free planning call if you would like to talk it through first.</p>
 
-  <p class="lede">Two programs your Preschool Boost allocation can buy from AkindaCo. Both are priced per session, not per person, and both come to your centre. Start with the booking form, or a free planning call if you would like to talk it through first.</p>
+  <div class="menu" aria-label="What is on the menu">
+    <a class="mcard" href="#atcd">
+      <span class="mtag">Training for your team</span>
+      <span class="mname">Attachment, Trauma and Child Development</span>
+      <ul>
+        <li>Six 3-hour units, fortnightly across one term</li>
+        <li>Any number of educators for the one price</li>
+        <li>Online or in your centre, evening or morning stream</li>
+        <li>$<span data-price="atcdUnitBare"></span> + GST per unit · series $<span data-price="atcdSeriesBare"></span></li>
+      </ul>
+      <span class="mmore">Details</span>
+    </a>
+    <a class="mcard" href="#learn-to-play">
+      <span class="mtag">Group for children</span>
+      <span class="mname">Learn to Play</span>
+      <ul>
+        <li>8 to 10 children and two of your educators</li>
+        <li>17 weekly program visits plus a set-up visit, two terms</li>
+        <li>Two hours each week, always in your room</li>
+        <li>$<span data-price="l2pVisitBare"></span> + GST per visit · program $<span data-price="l2pProgramBare"></span></li>
+      </ul>
+      <span class="mmore">Details</span>
+    </a>
+    <a class="mcard" href="#allied-health">
+      <span class="mtag">Allied health supports</span>
+      <span class="mname">Therapists working with groups</span>
+      <ul>
+        <li>Our therapists alongside groups of children and educators</li>
+        <li>Shaped to your centre's goals on the planning call</li>
+        <li>Groups and educator capacity only, never individual therapy</li>
+        <li>$<span data-price="alliedHourlyBare"></span> + GST per hour</li>
+      </ul>
+      <span class="mmore">Details</span>
+    </a>
+  </div>
   <div class="center">
     <div class="btnrow">
       <a class="btn" href="https://forms.gle/9hzaz4AjJAcRk25j7">Send a booking request</a>
@@ -199,8 +240,8 @@
 
   <section id="programs">
     <p class="eyebrow">The programs</p>
-    <h2>Two programs, each one stands alone</h2>
-    <p>You can book either program on its own, or both. The training is for your team. Learn to Play is for a small group of children and the educators who work with them.</p>
+    <h2>Each one stands alone</h2>
+    <p>You can book any of the three on its own, or combine them. The training is for your team. Learn to Play is for a small group of children and the educators who work with them. Allied health supports bring our therapists into your centre to work with groups.</p>
 
     <article class="program" id="atcd">
       <h3>Attachment, Trauma and Child Development</h3>
@@ -239,6 +280,14 @@
       <p class="aside">Evidence: Learn to Play maps to all five AEDC domains. Its primary domain on the Preschool Boost Menu is communication skills and general knowledge. <a href="https://www.earlychildhood.sa.gov.au/for-providers/preschool-boost-for-early-childhood-services/search?sort=title&num_ranks=9&query=akindaco">See AkindaCo on the Preschool Boost Menu</a>.</p>
       <p class="quote">“Play is our brain’s favourite way of learning.”<small>Diane Ackerman</small></p>
       <p><a href="https://www.akindaco.com/discover-more/preschool-boost-learn-to-play">Read more about Learn to Play on akindaco.com</a></p>
+    </article>
+
+    <article class="program" id="allied-health">
+      <h3>Allied health supports</h3>
+      <p class="who">For groups of children and educators · by the hour · $<span data-price="alliedHourlyBare"></span> + GST per hour</p>
+      <p>Our therapists work in your centre with groups of children and the educators around them: observing rooms and routines, running small groups, modelling strategies and coaching your team. Preschool Boost funds group and capacity-building work, not individual assessment or therapy, and we hold to that.</p>
+      <p class="q">What could it look like?</p>
+      <p>A block of visits around a goal you set, for example play environments, transitions, regulation in the room, or supporting a group of children with emerging communication. We scope it with you on the planning call and quote it by the hour, so it fits the allocation you have.</p>
     </article>
   </section>
 
@@ -348,7 +397,7 @@
     <details><summary>Does this count as on-menu spending for a Flying Start partner service?</summary><div class="a"><p>Yes. Both programs are approved items on the OECD Preschool Boost Menu, listed until June 2028, so they count toward the on-menu share of your allocation. Individual child assessment or therapy is outside the scope of Preschool Boost, and we do not offer it under this funding.</p></div></details>
     <details><summary>Who delivers the programs?</summary><div class="a"><p>AkindaCo’s multidisciplinary team of therapists, counsellors and developmental educators, all with current Working with Children Checks, and covered by public liability and professional indemnity insurance. You will have a named Preschool Boost coordinator at hello@akindaco.com for the whole program.</p></div></details>
     <details><summary>Will prices change?</summary><div class="a"><p>The 2027 rates are already shown above. They are our 2026 rates indexed by CPI. A quote holds its price for 30 days.</p></div></details>
-    <details><summary>What else does AkindaCo offer on the menu?</summary><div class="a"><p>Allied Health Supports for groups of children and educators. Ask on the planning call and we will talk through whether it suits your centre.</p></div></details>
+    <details><summary>Can we use allied health supports for one child?</summary><div class="a"><p>No. Preschool Boost funds group and capacity-building work, so our therapists work with groups of children and with your educators. A child who needs individual assessment or therapy is referred through their family and the NDIS or Medicare, outside Preschool Boost.</p></div></details>
   </section>
 
   <footer>
@@ -371,11 +420,11 @@
   const PRICES = {
     year2026: {
       hourly: 285, atcdUnit: 855, atcdUnitSup: 1282.5, atcdSeries: 5130, atcdSeriesSup: 7695,
-      supervision: 427.5, l2pVisit: 570, l2pProgram: 10260, l2pStarter: 5130
+      supervision: 427.5, l2pVisit: 570, l2pProgram: 10260, l2pStarter: 5130, alliedHourly: 194
     },
     year2027: {
       hourly: 295, atcdUnit: 887, atcdUnitSup: 1330, atcdSeries: 5322, atcdSeriesSup: 7980,
-      supervision: 443, l2pVisit: 591, l2pProgram: 10638, l2pStarter: 5319
+      supervision: 443, l2pVisit: 591, l2pProgram: 10638, l2pStarter: 5319, alliedHourly: 201
     }
   };
   const ROWS = [
@@ -387,6 +436,7 @@
     ["Learn to Play, per weekly visit", "l2pVisit"],
     ["Learn to Play program: set-up visit plus 17 program weeks (18 visits)", "l2pProgram", "total"],
     ["Learn to Play starter block: set-up plus program weeks 1 to 8 (the first half; complete it in your next plan)", "l2pStarter", "sub"],
+    ["Allied health supports, per hour", "alliedHourly"],
     ["Mentoring, in-room modelling or co-facilitation, per hour", "hourly"],
     ["Travel beyond 10 km of North Adelaide or Salisbury, per hour, pro-rated", "hourly"]
   ];
