@@ -4,648 +4,162 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Preschool Boost with AkindaCo</title>
-  <meta name="description" content="AkindaCo's Preschool Boost Menu programs for Flying Start partner services: Attachment, Trauma and Child Development training for educators, the Learn to Play group for children, and allied health supports. 2026 and 2027 pricing, how to book, what your centre provides, and the questions directors ask us." />
+  <meta name="description" content="AkindaCo's three Preschool Boost Menu programs: Learn to Play, ATCD Training and Allied Health Supports. What each one is, 2026 and 2027 prices, how to book and what your centre provides." />
   <meta name="theme-color" content="#005F41" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://boost.akindaco.com/" />
   <meta property="og:title" content="Preschool Boost with AkindaCo" />
-  <meta property="og:description" content="Three things your Preschool Boost allocation can buy from AkindaCo. One page with the answers: programs, pricing, booking and what to expect." />
+  <meta property="og:description" content="Three programs your Preschool Boost allocation can buy from AkindaCo. What each one is, what it costs and how to book." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://boost.akindaco.com/" />
-  <meta property="og:image" content="https://boost.akindaco.com/hero.jpg" />
+  <meta property="og:image" content="https://boost.akindaco.com/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    :root{
-      --cream:#FFF9F4; --cream-2:#F4ECE1; --white:#FFFFFF;
-      --forest:#005F41; --forest-deep:#004530; --ink:#1F3D2E; --muted:#4F6659;
-      --sage:#CEE0B3; --sage-soft:#E8F0DC; --line:#D9E3D0;
+    :root{--cream:#FFF9F4;--forest:#005F41;--line:#D9E3D0;
       --serif:'Cormorant Garamond',"Palatino Linotype",Georgia,serif;
-      --sans:'Nunito Sans',system-ui,"Segoe UI",Roboto,sans-serif;
-      --radius:16px; --shadow:0 1px 3px rgba(0,95,65,.06),0 10px 30px rgba(0,95,65,.06);
-    }
+      --sans:'Nunito Sans',system-ui,"Segoe UI",Roboto,sans-serif}
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:76px}
-    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+    body{margin:0;background:var(--cream);color:var(--forest);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+    .page{max-width:680px;margin:0 auto;padding:28px 20px 64px}
     a{color:var(--forest)}
-    h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0;color:var(--forest);letter-spacing:-.005em;text-wrap:balance}
-    h2{font-size:clamp(1.9rem,3.4vw,2.7rem)}
-    h3{font-size:1.35rem;margin-bottom:.4rem}
-    p{margin:0 0 1em}
-    ul{margin:0 0 1em;padding-left:1.15em}
+    h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0;color:var(--forest)}
+    h1{font-size:2.3rem;margin:26px 0 12px}
+    h2{font-size:1.75rem;margin:52px 0 14px;padding-top:26px;border-top:1px solid var(--line)}
+    h3{font-size:1.4rem;margin:30px 0 6px}
+    p{margin:0 0 .9em}
+    ul,ol{margin:0 0 1em;padding-left:1.25em}
     li{margin:0 0 .35em}
-    .container{max-width:1100px;margin:0 auto;padding:0 clamp(20px,5vw,44px)}
-    .kicker{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--forest);margin:0 0 12px}
-    .section{padding:clamp(56px,8vw,96px) 0}
-    .section-head{max-width:760px;margin-bottom:40px}
-    .section-sub{font-size:1.1rem;color:var(--muted);margin:14px 0 0}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--forest);border:1.5px solid var(--forest);color:var(--white);font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;padding:14px 26px;border-radius:999px;min-height:44px;transition:transform .12s ease,background .12s ease}
-    .btn:hover{background:var(--forest-deep)}
-    .btn:active{transform:scale(.97)}
-    .btn.ghost{background:transparent;color:var(--forest)}
-    .btn.ghost:hover{background:var(--sage-soft)}
-    .btn.light{background:var(--white);color:var(--forest);border-color:var(--white)}
-    .btn.light:hover{background:var(--cream)}
-    .btn.light.ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.6)}
-    .btn.small{font-size:11px;padding:10px 16px;min-height:40px}
-    .btnrow{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--forest);outline-offset:3px;border-radius:6px}
-    .dark a:focus-visible{outline-color:#fff}
-
-    /* header */
-    .site-header{position:sticky;top:0;z-index:20;background:rgba(255,249,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:border-color .2s ease}
-    .site-header.scrolled{border-color:var(--line)}
-    .site-header .container{display:flex;align-items:center;gap:10px;min-height:68px}
-    .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--forest)}
+    .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:1.3rem;font-weight:600}
     .brand img{width:40px;height:40px;border-radius:50%}
-    .nav{display:flex;gap:4px;margin-left:auto}
-    .nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;padding:10px 12px;border-radius:10px}
-    .nav a:hover{background:var(--sage-soft);color:var(--forest)}
-    .nav-cta{flex:none;margin-left:6px}
-
-    /* hero */
-    .hero{padding:clamp(48px,9vw,104px) 0 clamp(40px,6vw,72px);position:relative;overflow:hidden}
-    .hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,5vw,56px);align-items:center}
-    .pill{display:inline-block;background:var(--sage-soft);color:var(--forest);font-weight:700;font-size:.9rem;padding:8px 16px;border-radius:999px;margin-bottom:22px}
-    .hero h1{font-size:clamp(2.2rem,5vw,3.9rem);letter-spacing:-.02em}
-    .hero-lede{font-size:clamp(1.05rem,1.8vw,1.28rem);color:var(--muted);max-width:600px;margin:22px 0 0}
-    .hero-actions{margin-top:30px}
-    .hero-reassure{margin-top:16px;color:var(--forest);font-weight:600;font-size:.98rem}
-    .ticks{display:flex;flex-wrap:wrap;gap:10px 22px;margin:18px 0 0;padding:0;list-style:none;font-size:.95rem}
-    .ticks li{display:inline-flex;align-items:center;gap:8px;margin:0}
-    .ticks li::before{content:"";width:18px;height:18px;border-radius:50%;background:var(--sage) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23004530' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E") center/12px no-repeat;flex:none}
-    .hero-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:24px;box-shadow:var(--shadow);display:block}
-
-    /* programs band */
-    .programs{background:var(--white)}
-    .menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:0 0 36px}
-    .mcard{display:flex;flex-direction:column;background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px 20px;text-decoration:none;color:var(--ink)}
-    .mcard .kicker{margin-bottom:8px}
-    .mcard h3{font-size:1.5rem;margin-bottom:12px}
-    .mcard ul{list-style:none;padding:0;margin:0 0 14px;font-size:15px}
-    .mcard li{padding:6px 0 6px 18px;position:relative;border-top:1px solid var(--line)}
-    .mcard li::before{content:"";position:absolute;left:0;top:13px;width:8px;height:8px;border-radius:50%;background:var(--sage)}
-    .mcard li:last-child{font-weight:700;color:var(--forest)}
-    .mcard .more{margin-top:auto;font-size:12px;letter-spacing:.11em;text-transform:uppercase;font-weight:700;color:var(--forest)}
-    .compare{overflow-x:auto;margin:0 0 30px}
-    .compare table{width:100%;min-width:560px;border-collapse:separate;border-spacing:0;background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;font-size:15.5px}
-    .compare th,.compare td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
-    .compare tr:last-child td{border-bottom:0}
-    .compare thead th{background:var(--sage-soft);font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--forest)}
-    .compare tbody th{font-weight:700;color:var(--forest);width:20%}
-    .compare td strong{color:var(--forest)}
-    .detail{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .detail details{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:0 22px}
-    .detail summary{cursor:pointer;list-style:none;padding:18px 32px 18px 0;font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--forest);position:relative}
-    .detail summary::-webkit-details-marker{display:none}
-    .detail summary::after{content:"+";position:absolute;right:0;top:12px;font-size:1.8rem;font-weight:500}
-    .detail details[open] summary::after{content:"\2013"}
-    .detail .body{padding:0 0 18px}
-    .q{margin:1.1em 0 .25em;font-weight:700;color:var(--forest)}
-    .units{list-style:none;padding:0;margin:0 0 1em;counter-reset:u}
-    .units li{position:relative;padding:7px 0 7px 40px;border-top:1px solid var(--line)}
-    .units li:last-child{border-bottom:1px solid var(--line)}
-    .units li::before{counter-increment:u;content:counter(u);position:absolute;left:0;top:6px;width:28px;height:28px;border-radius:50%;background:var(--sage);color:var(--forest-deep);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
-    .quote{font-family:var(--serif);font-size:1.35rem;line-height:1.4;color:var(--forest);margin:1em 0 .3em}
-    .quote small{display:block;font-family:var(--sans);font-size:.85rem;color:var(--muted);margin-top:6px}
-
-    /* calendar band */
-    .dark{background:var(--forest);color:var(--white)}
-    .dark h2,.dark h3,.dark .kicker,.dark a{color:var(--white)}
-    .dark .kicker{color:var(--sage)}
-    .dark .section-sub{color:rgba(255,255,255,.82)}
-    .terms{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-    .term{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:var(--radius);padding:20px 18px}
-    .term h3{font-size:1.5rem;margin-bottom:12px}
-    .term p{margin:0 0 10px;font-size:15px;padding-left:14px;border-left:3px solid var(--sage);color:rgba(255,255,255,.95)}
-    .term p.alt{border-left-color:rgba(255,255,255,.35)}
-    .term p b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:2px}
-    .terms-note{margin-top:28px;font-size:1.02rem;color:rgba(255,255,255,.9);max-width:820px}
-
-    /* steps */
-    .steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;counter-reset:s}
-    .step{position:relative}
-    .step-num{counter-increment:s;width:48px;height:48px;border-radius:50%;background:var(--sage);color:var(--forest-deep);font-family:var(--serif);font-size:1.5rem;font-weight:600;display:flex;align-items:center;justify-content:center;margin-bottom:16px;position:relative;z-index:1}
-    .step-num::before{content:counter(s)}
-    .step:not(:last-child) .step-num::after{content:"";position:absolute;left:48px;top:23px;width:calc(100% + 24px);height:2px;background:var(--line);z-index:-1}
-    .steps .step:not(:last-child)::after{content:"";position:absolute;top:23px;left:56px;right:-16px;height:2px;background:var(--line)}
-    .step h3{font-size:1.2rem;margin-bottom:6px}
-    .step p{color:var(--muted);font-size:15px;margin:0}
-    .steps-note{margin-top:36px;text-align:center;color:var(--forest);font-weight:600;font-size:1.02rem}
-
-    /* cost band */
-    .cost{background:var(--sage-soft)}
-    .cost-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:32px;align-items:start}
-    .cost-copy p{font-size:1.04rem}
-    .cost-copy strong{color:var(--forest)}
-    table.prices{width:100%;border-collapse:collapse;background:var(--white);border-radius:var(--radius);overflow:hidden;font-size:15.5px;box-shadow:var(--shadow)}
-    .prices th,.prices td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-    .prices thead th{background:var(--cream);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--forest)}
-    .prices td.n,.prices th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
-    .prices tr.total td{font-weight:700;color:var(--forest)}
-    .prices tr.sub td{font-size:14px;color:var(--muted)}
-    .prices tr:last-child td{border-bottom:0}
-    .fund-card{background:var(--white);border-radius:var(--radius);padding:26px 26px 18px;box-shadow:var(--shadow);border-left:6px solid var(--forest)}
-    .fund-card h3{font-size:1.4rem;margin-bottom:18px}
-    .fund-row{display:grid;grid-template-columns:1fr;gap:2px;padding:10px 0;border-top:1px solid var(--line)}
-    .fund-row dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--forest)}
-    .fund-row dd{margin:0;font-weight:600;font-size:1rem}
-    .examples{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:32px 0 0}
-    .examples div{background:var(--white);border-radius:14px;padding:16px;font-size:14.5px;box-shadow:var(--shadow)}
-    .examples b{display:block;font-family:var(--serif);font-size:1.7rem;font-weight:600;color:var(--forest);margin-bottom:6px}
-    .fine{font-size:15px;color:var(--muted)}
-
-    /* expectations */
-    .expect{background:var(--cream-2)}
-    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .card{background:var(--white);border-radius:var(--radius);padding:24px 24px 16px;box-shadow:var(--shadow)}
-    .card h3{margin-bottom:12px}
-    .card ul{margin:0}
-    .card li{margin-bottom:.5em}
-
-    /* setting up */
-    .setup .qa{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .qa div{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 12px}
-    .qa h3{font-size:1.25rem;margin-bottom:8px}
-    .qa p{font-size:15.5px}
-
-    /* faq */
-    .faq{background:var(--white)}
-    .faq .section-head{text-align:center;margin:0 auto 36px}
-    .faq-list{max-width:820px;margin:0 auto}
-    .faq details{background:var(--cream);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;padding:0 20px}
-    .faq summary{cursor:pointer;list-style:none;padding:16px 36px 16px 0;font-family:var(--serif);font-size:1.2rem;font-weight:600;color:var(--forest);position:relative;min-height:44px}
-    .faq summary::-webkit-details-marker{display:none}
-    .faq summary::after{content:"";position:absolute;right:2px;top:20px;width:10px;height:10px;border-right:2px solid var(--forest);border-bottom:2px solid var(--forest);transform:rotate(45deg);transition:transform .2s ease}
-    .faq details[open] summary::after{transform:rotate(-135deg);top:26px}
-    .faq .a{padding:0 0 16px;font-size:16px}
-    .faq .a p:last-child{margin:0}
-
-    /* cta band + footer */
-    .cta-band{background:var(--forest);color:var(--white);padding:clamp(48px,7vw,80px) 0;text-align:center}
-    .cta-band h2{color:var(--white)}
-    .cta-band p{color:rgba(255,255,255,.85);max-width:640px;margin:14px auto 26px;font-size:1.08rem}
-    .cta-band .btnrow{justify-content:center}
-    footer{padding:40px 0 48px;font-size:14.5px;color:var(--muted)}
-    footer .container{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:start}
-    footer a{color:var(--forest)}
-    .lockup{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:0 0 14px}
-    .lockup img{height:56px;width:auto}
-    .lockup .ph{height:56px;min-width:220px;border:1px dashed var(--forest);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;padding:0 12px;text-align:center;color:var(--forest)}
-
-    @media (max-width:900px){
-      .hero .container{grid-template-columns:1fr}
-      .hero-photo{max-height:320px}
-      .terms{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .steps .step::after,.step .step-num::after{display:none}
-      .cost-grid{grid-template-columns:1fr}
-      .examples{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .cards,.setup .qa{grid-template-columns:1fr 1fr}
-      .detail{grid-template-columns:1fr}
-      footer .container{grid-template-columns:1fr}
+    .lede{font-size:1.15rem}
+    .btn{display:inline-block;background:var(--forest);color:#fff;font-weight:700;font-size:13px;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;padding:14px 26px;border-radius:999px;margin:6px 0}
+    .btn:hover{background:#004530}
+    a:focus-visible{outline:2px solid var(--forest);outline-offset:3px;border-radius:6px}
+    dl{margin:0 0 1em}
+    dl div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:8px 0;border-top:1px solid var(--line)}
+    dl div:last-child{border-bottom:1px solid var(--line)}
+    dt{font-weight:700}
+    dd{margin:0}
+    table{width:100%;border-collapse:collapse;margin:0 0 .8em}
+    th,td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{font-weight:700;font-size:14px}
+    .n{text-align:right;white-space:nowrap}
+    .small{font-size:15px}
+    .q{font-weight:700;margin:1.1em 0 .15em}
+    footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);font-size:14.5px}
+    @media (max-width:520px){
+      h1{font-size:1.95rem}
+      dl div{grid-template-columns:1fr;gap:0}
     }
-    @media (max-width:720px){
-      .nav{display:none}
-      .menu{grid-template-columns:1fr}
-      .terms,.steps,.examples,.cards,.setup .qa{grid-template-columns:1fr}
-      .site-header .container{min-height:60px}
-    }
-    @media (prefers-reduced-motion:reduce){*{transition:none !important}}
-
     @media print{
-      @page{size:A4;margin:12mm 14mm}
-      body{background:#fff;color:#1F3D2E;font-size:9.5pt;line-height:1.3}
-      .site-header{position:static;background:#fff}
-      .nav,.btn,.btnrow,.hero-photo,.cta-band{display:none}
-      .container{max-width:none;padding:0}
-      .section{padding:5mm 0}
-      .section-head{margin-bottom:3mm}
-      h1{font-size:20pt}
-      h2{font-size:15pt}
-      h3{font-size:11.5pt}
-      .hero{padding:3mm 0}
-      .hero .container{grid-template-columns:1fr}
-      .hero-lede{font-size:10pt;margin-top:2mm}
-      .ticks{margin-top:2mm;font-size:8.5pt}
-      .menu{gap:2mm;margin-bottom:3mm}
-      .mcard{padding:2.5mm 3mm}
-      .mcard ul{font-size:8pt}
-      .mcard .more{display:none}
-      .compare table{min-width:0;font-size:8.5pt}
-      .compare th,.compare td{padding:1.5mm 2mm}
-      .detail{grid-template-columns:1fr 1fr;gap:3mm}
-      .detail details{padding:0 3mm}
-      .detail summary{padding:2mm 0;font-size:11pt}
-      .detail summary::after{display:none}
-      .detail .body{display:block;padding-bottom:2mm}
-      .units li{padding:1mm 0 1mm 8mm}
-      .units li::before{width:5.5mm;height:5.5mm;font-size:7.5pt;top:.8mm}
-      .quote{font-size:10.5pt}
-      .dark{background:#fff;color:#1F3D2E;border-top:1px solid #bbb;border-bottom:1px solid #bbb}
-      .dark h2,.dark h3,.dark .kicker{color:#005F41}
-      .dark .section-sub,.terms-note{color:#1F3D2E}
-      .term{background:#fff;border-color:#bbb;padding:2.5mm 3mm}
-      .term p{color:#1F3D2E;font-size:8.5pt;border-left-color:#CEE0B3}
-      .term p b{color:#005F41}
-      .terms{gap:2mm}
-      .steps{gap:3mm;grid-template-columns:repeat(5,1fr)}
-      .step-num{width:8mm;height:8mm;font-size:11pt;margin-bottom:2mm}
-      .steps .step::after{display:none}
-      .step p{font-size:8.5pt}
-      .steps-note{margin-top:3mm;font-size:9pt}
-      #cost{break-before:page}
-      .cost{background:#fff}
-      .cost-grid{grid-template-columns:1.5fr 1fr;gap:4mm}
-      table.prices{box-shadow:none;border:1px solid #bbb;font-size:8.5pt}
-      .prices th,.prices td{padding:1.5mm 2mm}
-      .fund-card{box-shadow:none;border:1px solid #bbb;border-left:4px solid #005F41;padding:3mm}
-      .fund-row{padding:1.5mm 0}
-      .examples{gap:2mm;margin-top:3mm;grid-template-columns:repeat(5,1fr)}
-      .examples div{box-shadow:none;border:1px solid #bbb;padding:2mm;font-size:8pt}
-      .examples b{font-size:11pt}
-      .expect{background:#fff}
-      .cards{gap:3mm;grid-template-columns:repeat(3,1fr)}
-      .card{box-shadow:none;border:1px solid #bbb;padding:3mm}
-      .setup .qa{gap:3mm;grid-template-columns:repeat(3,1fr)}
-      .qa div{padding:2.5mm 3mm}
-      .qa p{font-size:8.5pt}
-      .faq details{padding:0 3mm;margin-bottom:1.5mm;break-inside:avoid}
-      .faq summary{padding:1.5mm 0;font-size:10.5pt;min-height:0}
-      .faq summary::after{display:none}
-      .faq .a{display:block;font-size:9pt;padding-bottom:1.5mm}
-      footer{padding:4mm 0}
-      footer .container{grid-template-columns:1fr 1fr}
-      .step-num,.mcard li::before,.units li::before,.ticks li::before{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-      a{text-decoration:none}
+      @page{size:A4;margin:14mm 16mm}
+      body{background:#fff;font-size:10pt;line-height:1.35}
+      .page{max-width:none;padding:0}
+      h1{font-size:20pt;margin:3mm 0 2mm}
+      h2{font-size:14pt;margin:6mm 0 2mm;padding-top:3mm}
+      h3{font-size:12pt;margin:4mm 0 1mm}
+      .btn{background:none;color:var(--forest);padding:0;letter-spacing:0;text-transform:none;font-size:10pt;text-decoration:underline}
+      .btn::after{content:" (" attr(href) ")"}
+      dl div{padding:1.2mm 0}
+      th,td{padding:1.4mm 1.5mm}
+      h3,table,dl{break-inside:avoid}
+      h2,h3{break-after:avoid}
+      footer{margin-top:6mm;padding-top:3mm;font-size:9pt}
     }
   </style>
 </head>
 <body>
+<div class="page">
 
-<header class="site-header" id="top">
-  <div class="container">
-    <a class="brand" href="https://www.akindaco.com/" aria-label="AkindaCo home"><img src="logo.png" alt="" width="40" height="40" />AkindaCo</a>
-    <nav class="nav" aria-label="Sections">
-      <a href="#programs">Programs</a>
-      <a href="#calendar">Calendar</a>
-      <a href="#booking">Booking</a>
-      <a href="#cost">Cost</a>
-      <a href="#centre">Your centre</a>
-      <a href="#faq">Questions</a>
-    </nav>
-    <a class="btn small nav-cta" href="https://forms.gle/9hzaz4AjJAcRk25j7">Send a booking request</a>
-  </div>
-</header>
+  <a class="brand" href="https://www.akindaco.com/"><img src="logo.png" alt="" width="40" height="40" />AkindaCo</a>
 
-<section class="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <span class="pill">Preschool Boost · OECD approved supplier · 2026 and 2027</span>
-      <h1>Three things your Preschool Boost allocation can buy. All your questions are answered.</h1>
-      <p class="hero-lede">Training for your team, a play group for your children, and therapists who work with groups. Everything is priced per session, not per person, and everything comes to your centre.</p>
-      <div class="btnrow hero-actions">
-        <a class="btn" href="https://forms.gle/9hzaz4AjJAcRk25j7">Send a booking request</a>
-        <a class="btn ghost" href="https://calendly.com/akindaco/preschool-boost-discovery-call">Book a free 30-minute call</a>
-      </div>
-      <p class="hero-reassure">A quote and provisional booking within two business days. You can hold dates before your plan is approved.</p>
-      <ul class="ticks">
-        <li>On the OECD menu until 2028</li>
-        <li>Small team delivery</li>
-        <li>Certificates and a summary for your reporting</li>
-        <li>Salisbury and North Adelaide based</li>
-      </ul>
-    </div>
-    <img class="hero-photo" src="hero.jpg" alt="Four preschool children running along a tree-lined path" width="1500" height="1000" />
-  </div>
-</section>
+  <h1>Preschool Boost with AkindaCo</h1>
+  <p class="lede">We have three programs on the OECD Preschool Boost Menu. Book one, or combine them. Every price is per session, not per person, and we come to your centre.</p>
+  <p><a class="btn" href="https://forms.gle/9hzaz4AjJAcRk25j7">Send a booking request</a></p>
 
-<section class="section programs" id="programs">
-  <div class="container">
-    <div class="section-head">
-      <p class="kicker">The programs</p>
-      <h2>What's on the menu from AkindaCo</h2>
-      <p class="section-sub">We have three standalone programs, or you are welcome to combine them. Learn to Play is for a small group of children and the educators who work with them, the training is for your whole team, and allied health supports bring our therapists into your centre to work with groups.</p>
-    </div>
+  <h2>The three programs</h2>
 
-    <div class="menu">
-      <a class="mcard" href="#learn-to-play">
-        <p class="kicker">Group for children</p>
-        <h3>Learn to Play</h3>
-        <ul>
-          <li>8 to 10 children and two of your educators</li>
-          <li>17 weekly program visits plus a set-up visit, over two terms</li>
-          <li>Two hours each week, always in your room</li>
-          <li>$<span data-price="l2pVisitBare"></span> + GST per visit · full program $<span data-price="l2pProgramBare"></span></li>
-        </ul>
-        <span class="more">Full description below ↓</span>
-      </a>
-      <a class="mcard" href="#atcd">
-        <p class="kicker">Training for your team</p>
-        <h3>Attachment, Trauma and Child Development</h3>
-        <ul>
-          <li>Six 3-hour units, fortnightly across one term</li>
-          <li>Any number of educators for the one price</li>
-          <li>Online or in your centre, evening or morning stream</li>
-          <li>$<span data-price="atcdUnitBare"></span> + GST per unit · full series $<span data-price="atcdSeriesBare"></span></li>
-        </ul>
-        <span class="more">Full description below ↓</span>
-      </a>
-      <a class="mcard" href="#allied-health">
-        <p class="kicker">Allied health supports</p>
-        <h3>Therapists working with groups</h3>
-        <ul>
-          <li>Our therapists alongside groups of children and educators</li>
-          <li>Observation, small groups, modelling and coaching</li>
-          <li>Shaped to your centre's goals on the planning call</li>
-          <li>$<span data-price="alliedHourlyBare"></span> + GST per hour</li>
-        </ul>
-        <span class="more">Full description below ↓</span>
-      </a>
-    </div>
+  <h3>1. Learn to Play</h3>
+  <p>A therapist-led pretend play group in your room, based on Dr Karen Stagnitti’s Learn to Play approach. It builds the play skills that sit under language, social development and school readiness, and it teaches your educators to run the group themselves.</p>
+  <dl>
+    <div><dt>Who</dt><dd>8 to 10 children and two of your educators</dd></div>
+    <div><dt>What</dt><dd>A weekly two-hour visit: 30 minutes with educators, a 60-minute group with the children, 30 minutes of reflection</dd></div>
+    <div><dt>How long</dt><dd>17 program weeks plus a set-up visit. We can pause over school holidays if desired</dd></div>
+    <div><dt>Price</dt><dd>$570 + GST per visit in 2026, $591 in 2027</dd></div>
+  </dl>
 
-    <div class="compare" role="region" aria-label="The two programs side by side">
-      <table>
-        <thead><tr><th scope="col">Side by side</th><th scope="col">Learn to Play</th><th scope="col">Training</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Who it is for</th><td>8 to 10 children at a similar stage of play, and two of your educators</td><td>Your whole team, from room leaders to new educators</td></tr>
-          <tr><th scope="row">Format</th><td>Weekly two-hour visits: 30 minutes educator training, 60 minutes group, 30 minutes reflection</td><td>Six units of 3 hours each</td></tr>
-          <tr><th scope="row">Length</th><td>17 program weeks plus a set-up visit, as two 9-week blocks in consecutive terms</td><td>One school term, fortnightly from Week 1</td></tr>
-          <tr><th scope="row">Where and when</th><td>Always in your room. Same day and time each week, morning or early afternoon</td><td>Online or in your centre. Tuesday 5:30 to 8:30 pm or Wednesday 9 am to 12 pm</td></tr>
-          <tr><th scope="row">Price</th><td><strong>$<span data-price="l2pVisitBare"></span> + GST per visit</strong> in 2026, $<span data-price="l2pVisitBare27"></span> in 2027. Full program $<span data-price="l2pProgramBare"></span> / $<span data-price="l2pProgramBare27"></span></td><td><strong>$<span data-price="atcdUnitBare"></span> + GST per unit</strong> in 2026, $<span data-price="atcdUnitBare27"></span> in 2027. Full series $<span data-price="atcdSeriesBare"></span> / $<span data-price="atcdSeriesBare27"></span></td></tr>
-          <tr><th scope="row">You provide</th><td>A play space, the same two educators every week, a few toys set out from our list</td><td>A room, a screen, staff released for each unit</td></tr>
-          <tr><th scope="row">You get</th><td>An end-of-program summary, certificates for educators and children, a team who can run the group</td><td>CPD certificates, slides, optional group supervision between units</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <h3>2. ATCD Training</h3>
+  <p>Attachment, Trauma and Child Development training for educators. Six units that build your team’s skills in reading children’s behaviour, creating safety, co-regulation and working with families.</p>
+  <dl>
+    <div><dt>Who</dt><dd>Your whole team. Any number of educators for the one price</dd></div>
+    <div><dt>What</dt><dd>Six 3-hour units, online or in your centre. Book the full series or single units</dd></div>
+    <div><dt>How long</dt><dd>Usually one unit a fortnight across a term</dd></div>
+    <div><dt>Price</dt><dd>$855 + GST per unit in 2026, $887 in 2027</dd></div>
+  </dl>
+  <p class="small">The units: 1. Foundations of attachment and development. 2. Understanding trauma in the early years. 3. Creating safe and predictable environments. 4. Co-regulation and emotional literacy. 5. Embedding therapeutic practice into daily routines. 6. Engaging families through an attachment lens.</p>
 
-    <div class="detail">
-      <details id="learn-to-play">
-        <summary>Learn to Play, in full</summary>
-        <div class="body">
-          <p>Play is not a luxury. It is the work of childhood. Learn to Play is a structured, therapist-led group program based on Dr Karen Stagnitti’s internationally recognised approach, brought into your preschool room. It is for children who are not yet playing to their developmental potential, and it builds the blocks of pretend play: object substitution, doll and teddy play, role play, and the ability to create and sustain a play story. Those skills underpin language, social development and school readiness.</p>
-          <p class="q">Which children benefit most?</p>
-          <p>Children who seem stuck in their play, who repeat the same simple themes, who find it hard to join other children’s play stories, or whose communication is still emerging. That includes children with developmental delays, autism, language difficulties or trauma histories. Children are chosen for where they are in their play, not for their behaviour.</p>
-          <p class="q">How is the group chosen?</p>
-          <p>Your educators nominate the children they think would benefit. Our therapist confirms the group at the planning visit, so that the children are at a similar stage of pretend play and the group works for everyone in it.</p>
-          <p class="q">What do educators take away?</p>
-          <p>One clear play strategy each week, modelled in the group and discussed afterwards, plus language modelling techniques and growing confidence to run imaginative play themselves. By the end, your educators can run the group without us.</p>
-          <p class="fine">Evidence: Learn to Play maps to all five AEDC domains. Its primary domain on the Preschool Boost Menu is communication skills and general knowledge. <a href="https://www.earlychildhood.sa.gov.au/for-providers/preschool-boost-for-early-childhood-services/search?sort=title&num_ranks=9&query=akindaco">See AkindaCo on the Preschool Boost Menu</a>.</p>
-          <p class="quote">“Play is our brain’s favourite way of learning.”<small>Diane Ackerman</small></p>
-          <p><a href="https://www.akindaco.com/discover-more/preschool-boost-learn-to-play">Read more on akindaco.com</a></p>
-        </div>
-      </details>
-      <details id="atcd">
-        <summary>Attachment, Trauma and Child Development, in full</summary>
-        <div class="body">
-          <p>A professional development series for early childhood educators, built on attachment theory, developmental neuroscience and trauma-informed practice. Teams learn to read attachment patterns and stress responses in children aged three to five, create environments that communicate safety, use co-regulation and emotional literacy in the moment, and embed therapeutic approaches into everyday routines. It is grounded in current research and clinical experience and designed for the whole team, so that the change lasts.</p>
-          <ol class="units">
-            <li>Foundations of attachment and development</li>
-            <li>Understanding trauma in the early years</li>
-            <li>Creating safe and predictable environments</li>
-            <li>Co-regulation and emotional literacy</li>
-            <li>Embedding therapeutic practice into daily routines</li>
-            <li>Engaging families through an attachment lens</li>
-          </ol>
-          <p class="q">How does a term run?</p>
-          <p>Six units delivered fortnightly across one school term, starting in Week 1. On the alternate weeks, an optional 90-minute group supervision session helps your team apply each unit in your rooms. Units build on each other, so we recommend the full series, but you can book any number in any order.</p>
-          <p class="q">Can it be adapted for families?</p>
-          <p>Yes. The whole series can be delivered to families, or to a mixed group of educators and families. Ask on the planning call.</p>
-          <p class="quote">“The most powerful thing in a young child’s life is a consistent, caring adult who shows up every day. This training helps your team become exactly that.”</p>
-          <p><a href="https://www.akindaco.com/discover-more/preschool-boost-atcd">Read more on akindaco.com</a></p>
-        </div>
-      </details>
-      <details id="allied-health">
-        <summary>Allied health supports, in full</summary>
-        <div class="body">
-          <p>Our therapists work in your centre with groups of children and the educators around them: observing rooms and routines, running small groups, modelling strategies and coaching your team. Preschool Boost funds group and capacity-building work, not individual assessment or therapy, and we hold to that.</p>
-          <p class="q">What could it look like?</p>
-          <p>A block of visits around a goal you set, for example play environments, transitions, regulation in the room, or supporting a group of children with emerging communication. We scope it with you on the planning call and quote it by the hour, so it fits the allocation you have.</p>
-        </div>
-      </details>
-    </div>
-  </div>
-</section>
+  <h3>3. Allied Health Supports</h3>
+  <p>Our therapists work in your centre with groups of children and the educators around them: observing, running small groups, modelling strategies and coaching your team. We plan it with you around a goal you set.</p>
+  <dl>
+    <div><dt>Who</dt><dd>Groups of children and educators</dd></div>
+    <div><dt>What</dt><dd>Visits shaped to your centre’s goals</dd></div>
+    <div><dt>How long</dt><dd>As many hours as your allocation allows</dd></div>
+    <div><dt>Price</dt><dd>$194 + GST per hour in 2026, $201 in 2027</dd></div>
+  </dl>
 
-<section class="section dark" id="calendar">
-  <div class="container">
-    <div class="section-head">
-      <p class="kicker">The calendar</p>
-      <h2>How a school year holds both programs</h2>
-      <p class="section-sub">Training fits inside one term. Learn to Play takes two consecutive terms. Most centres run one of these patterns.</p>
-    </div>
-    <div class="terms">
-      <div class="term"><h3>Term 1</h3><p><b>Learn to Play</b>Set-up visit, then program weeks 1 to 8</p><p class="alt"><b>Training</b>Units 1 to 6, fortnightly from Week 1, with supervision on the alternate weeks if you add it</p></div>
-      <div class="term"><h3>Term 2</h3><p><b>Learn to Play</b>Program weeks 9 to 17, finishing before the mid-year break</p></div>
-      <div class="term"><h3>Term 3</h3><p><b>Learn to Play</b>Set-up visit, then program weeks 1 to 8</p><p class="alt"><b>Training</b>A second team, or a centre starting mid-year</p></div>
-      <div class="term"><h3>Term 4</h3><p><b>Learn to Play</b>Program weeks 9 to 17. Term 4 is short, so the block uses its make-up week</p></div>
-    </div>
-    <p class="terms-note">Learn to Play pauses over the holidays at no charge. Each 9-week block keeps one make-up week in hand for a public holiday or a centre closure, so it still finishes inside the term. If your allocation only reaches half the program this year, book a starter block, which is the set-up visit and program weeks 1 to 8, and complete the program in your next plan.</p>
-  </div>
-</section>
+  <h2>Prices</h2>
+  <p>All prices are plus GST. The rate is set by the year your program starts.</p>
+  <table>
+    <thead><tr><th>Item</th><th class="n">2026</th><th class="n">2027</th></tr></thead>
+    <tbody>
+      <tr><td>Learn to Play, per weekly visit</td><td class="n">$570</td><td class="n">$591</td></tr>
+      <tr><td>Learn to Play, full program (18 visits)</td><td class="n">$10,260</td><td class="n">$10,638</td></tr>
+      <tr><td>ATCD Training, per unit</td><td class="n">$855</td><td class="n">$887</td></tr>
+      <tr><td>ATCD Training, full series (6 units)</td><td class="n">$5,130</td><td class="n">$5,322</td></tr>
+      <tr><td>Group supervision after a unit (90 minutes, optional)</td><td class="n">$427.50</td><td class="n">$443</td></tr>
+      <tr><td>Allied Health Supports, per hour</td><td class="n">$194</td><td class="n">$201</td></tr>
+    </tbody>
+  </table>
+  <p class="small">Travel is included within 10 km of North Adelaide or Salisbury. Beyond that it is charged by time at $285 per hour ($295 in 2027). If your allocation only covers half of Learn to Play this year, you can book the first 9 visits and finish the program in your next plan.</p>
 
-<section class="section" id="booking">
-  <div class="container">
-    <div class="section-head">
-      <p class="kicker">Booking</p>
-      <h2>From enquiry to first visit, in five steps</h2>
-      <p class="section-sub">Flying Start partner services build their Preschool Boost plans between August and November for the following year. That is the best time to send a request, but we take them all year.</p>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="step-num"></div><h3>Send a request</h3><p>The booking form takes about five minutes. If you would rather talk first, book a free 30-minute planning call and we will fill it in with you.</p></div>
-      <div class="step"><div class="step-num"></div><h3>Quote in two business days</h3><p>We send a quote and a provisional booking, and pencil your dates in from that point. Quotes hold their price for 30 days.</p></div>
-      <div class="step"><div class="step-num"></div><h3>Hold your dates</h3><p>Provisional bookings are welcome while your plan is with the OECD. Confirm by email once it is approved.</p></div>
-      <div class="step"><div class="step-num"></div><h3>Confirm and invoice</h3><p>Add AkindaCo as a supplier with your finance team now. We invoice you once you confirm, payable when your funds are released or two weeks before you start, whichever comes first.</p></div>
-      <div class="step"><div class="step-num"></div><h3>First visit</h3><p>We confirm your trainer or therapist. Learn to Play begins with the planning visit. Training begins in Week 1 of your term.</p></div>
-    </div>
-    <p class="steps-note">Changes need more than two weeks’ notice before your start date. Rescheduling with two weeks’ notice is free.</p>
-    <div class="btnrow" style="justify-content:center;margin-top:22px">
-      <a class="btn" href="https://forms.gle/9hzaz4AjJAcRk25j7">Send a booking request</a>
-      <a class="btn ghost" href="https://calendly.com/akindaco/preschool-boost-discovery-call">Book a free 30-minute call</a>
-    </div>
-  </div>
-</section>
+  <h2>How to book</h2>
+  <ol>
+    <li><a href="https://forms.gle/9hzaz4AjJAcRk25j7">Send a booking request</a>. It takes about five minutes.</li>
+    <li>We send a quote and hold your dates within two business days.</li>
+    <li>Confirm by email once your Preschool Boost plan is approved, and we invoice you.</li>
+  </ol>
+  <p>Would you rather talk first? <a href="https://calendly.com/akindaco/preschool-boost-discovery-call">Book a free 30-minute call</a>.</p>
 
-<section class="section cost" id="cost">
-  <div class="container">
-    <div class="section-head">
-      <p class="kicker">Clear and fair</p>
-      <h2>What it costs, without the fine print</h2>
-    </div>
-    <div class="cost-grid">
-      <div class="cost-copy">
-        <p>Every price is <strong>per session for your whole team</strong>, whatever its size. A training unit costs the same whether four educators attend or twenty-four. The rate that applies is the one for <strong>the year your program starts</strong>.</p>
-        <p>2027 rates are our 2026 rates indexed by CPI at 3.8%. All prices exclude GST.</p>
-        <table class="prices" id="pricetable">
-          <thead><tr><th>Item</th><th class="n">Starts in 2026</th><th class="n">Starts in 2027</th></tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <aside class="fund-card">
-        <h3>The facts at a glance</h3>
-        <dl>
-          <div class="fund-row"><dt>Funding</dt><dd>Preschool Boost, on-menu items. Both programs count toward your on-menu share.</dd></div>
-          <div class="fund-row"><dt>Billing</dt><dd>Per session, not per person. We invoice you once you confirm in writing.</dd></div>
-          <div class="fund-row"><dt>Travel</dt><dd>Included within 10 km of North Adelaide or Salisbury. Beyond that, by time at the hourly rate.</dd></div>
-          <div class="fund-row"><dt>Quotes</dt><dd>Within two business days. Price held for 30 days.</dd></div>
-          <div class="fund-row"><dt>Holidays</dt><dd>Learn to Play pauses over term breaks at no charge.</dd></div>
-          <div class="fund-row"><dt>Cancellations</dt><dd>If we cancel, we make it up free. Centre cancellations under two business days are charged.</dd></div>
-        </dl>
-      </aside>
-    </div>
-    <p class="kicker" style="margin-top:36px">What your allocation buys, at 2027 rates</p>
-    <div class="examples">
-      <div><b>$4,500</b>Four training units plus one group supervision</div>
-      <div><b>$5,500</b>The full six-unit training series. Or a Learn to Play starter block, with the second half in your next plan</div>
-      <div><b>$8,000</b>The full training series with six group supervision sessions</div>
-      <div><b>$11,000</b>The full Learn to Play program: set-up visit plus 17 program weeks</div>
-      <div><b>$16,000</b>Both programs</div>
-    </div>
-  </div>
-</section>
+  <h2>What we ask of your centre</h2>
+  <ul>
+    <li><strong>Learn to Play:</strong> a play space, help choosing the children, and the same two educators each week, who stay in the group for the full two hours.</li>
+    <li><strong>ATCD Training:</strong> a room with a screen, and educators released for the three hours of each unit.</li>
+    <li><strong>All programs:</strong> a day and time that works for your centre, arranged with us at booking, and as much notice as you can if a session cannot go ahead.</li>
+  </ul>
 
-<section class="section expect" id="centre">
-  <div class="container">
-    <div class="section-head">
-      <p class="kicker">Expectations</p>
-      <h2>What we’ll ask of your centre</h2>
-      <p class="section-sub">Not much, but the few things we ask make the difference between a program that sticks and one that drifts.</p>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <h3>For the training</h3>
-        <ul>
-          <li>A room that fits your team, with a projector or a TV we can plug a laptop into. If there is neither, we bring printed slides.</li>
-          <li>Educators released for the three hours of each unit, and 90 minutes for each supervision session if you add them.</li>
-          <li>One contact person for dates, room set-up and invoicing.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>For Learn to Play</h3>
-        <ul>
-          <li>A play space for 8 to 10 children, and a quiet spot for the educator sessions before and after.</li>
-          <li>The same two educators every week, in the room for the full two hours. They are co-facilitators, so the session cannot cover breaks or ratios.</li>
-          <li>Help choosing the children, and the same day and time each week.</li>
-          <li>A few everyday toys set out from the short list we send the day before. We bring the Learn to Play kit and the weekly handout.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>For everything</h3>
-        <ul>
-          <li>Someone who can confirm the quote in writing.</li>
-          <li>A finance contact who can set AkindaCo up as a supplier. Doing this at booking saves a term of chasing later.</li>
-          <li>As much notice as you can give if a session cannot go ahead.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+  <h2>Questions centres ask us</h2>
+  <p class="q">Is the price per educator?</p>
+  <p>No. Every price is per session for your whole team.</p>
+  <p class="q">Is the 17 weeks for all programs?</p>
+  <p>No. Only Learn to Play runs for 17 program weeks. ATCD Training is six units, and you can book just one.</p>
+  <p class="q">Can ATCD Training run after hours or online?</p>
+  <p>Yes. Units can run in the evening, in a staff meeting slot or during the day, online or in your centre. Learn to Play is always in your room.</p>
+  <p class="q">Can we hold dates before our plan is approved?</p>
+  <p>Yes. Nothing is invoiced until you confirm in writing.</p>
+  <p class="q">What if a session is cancelled?</p>
+  <p>If we cancel, we make it up at no charge. If your centre cancels with less than two business days’ notice, the session is charged.</p>
+  <p class="q">What do we get at the end?</p>
+  <p>CPD certificates for educators, and for Learn to Play an end-of-program summary you can use in your reporting.</p>
+  <p class="q">Can Allied Health Supports be used for one child?</p>
+  <p>No. Preschool Boost funds work with groups and educators, not individual therapy.</p>
 
-<section class="section setup" id="setup">
-  <div class="container">
-    <div class="section-head">
-      <p class="kicker">Logistics</p>
-      <h2>Setting up, term by term</h2>
-    </div>
-    <div class="qa">
-      <div><h3>When can we start?</h3><p>Training runs by school term from Week 1, in the Tuesday evening or Wednesday morning stream. Learn to Play runs weekly in a morning slot (9:30 to 11:30 am) or an afternoon slot (1:30 to 3:30 pm). Wednesday mornings fill first. 2027 terms are booking now.</p></div>
-      <div><h3>How long does set-up take?</h3><p>We confirm your trainer or therapist six weeks before you start, check your room and equipment four weeks out, and your invoice is due two weeks out. Booking a term ahead keeps everything comfortable.</p></div>
-      <div><h3>Holidays and public holidays?</h3><p>Learn to Play pauses over the term break at no charge and picks up in Week 1 of the next term. Each block has a make-up week in hand for a public holiday or closure, so it still finishes inside the term.</p></div>
-      <div><h3>Two years, or two rooms?</h3><p>The two Learn to Play blocks are always consecutive terms, so Terms 3 and 4 this year or Terms 1 and 2 next year both work. Within a week the group can rotate between rooms or age groups.</p></div>
-      <div><h3>What if a session is cancelled?</h3><p>If we cancel, for example because your therapist is unwell, we make it up at the end of the block at no charge. If your centre cancels with less than two business days’ notice, the session is charged. If a program cannot be finished, the remaining paid sessions become educator training, coaching, or a play-environment consultation.</p></div>
-      <div><h3>What do we get at the end?</h3><p>An end-of-program summary for your Preschool Boost reporting, CPD certificates for every educator who took part, certificates for the children in the Learn to Play group, and a team who can keep the play group going.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section faq" id="faq">
-  <div class="container">
-    <div class="section-head">
-      <p class="kicker">Good questions</p>
-      <h2>The things directors ask us first</h2>
-    </div>
-    <div class="faq-list">
-      <details><summary>Is the 17 weeks for both programs?</summary><div class="a"><p>No. Each program stands alone. The training is six 3-hour units across one term. Learn to Play is 17 weekly program visits plus a set-up visit, across two consecutive terms.</p></div></details>
-      <details><summary>Is the price per educator?</summary><div class="a"><p>No. Every price is per session for your whole team. A training unit is the same price whether four educators attend or twenty-four.</p></div></details>
-      <details><summary>Can we book just one training unit?</summary><div class="a"><p>Yes. Any number of units, in any order. We recommend the full series because each unit builds on the last, and the full-series price saves you the cost of one unit.</p></div></details>
-      <details><summary>How many staff can attend the training?</summary><div class="a"><p>As many as you like. For teams larger than 25 we add a second facilitator at no extra charge so that everyone gets time in the activities.</p></div></details>
-      <details><summary>Can training run after hours, or in a staff meeting?</summary><div class="a"><p>Yes. The Tuesday evening stream runs 5:30 to 8:30 pm, which suits most staff-meeting nights. The Wednesday morning stream suits non-contact time. Supervision sessions can run online at a time you choose, including early evening.</p></div></details>
-      <details><summary>Can any of it be online?</summary><div class="a"><p>Training units and supervision can run online or in your centre. Learn to Play is always in your room, because your educators are in the group with the children.</p></div></details>
-      <details><summary>We are outside metro Adelaide. Can you still come?</summary><div class="a"><p>Yes. Training can run online, or as a blended model with the first unit online, units two to five in a two-day visit, and the last unit and supervision online. Travel beyond 10 km of North Adelaide or Salisbury is charged by time at the hourly rate, and for regional centres we quote flights and accommodation separately. Learn to Play in regional centres is by arrangement.</p></div></details>
-      <details><summary>Can Learn to Play run fortnightly, or for fewer weeks?</summary><div class="a"><p>No. Learn to Play is 17 program weeks plus a set-up visit, weekly, across two consecutive terms, because 17 weekly sessions is what the research behind the program is built on. Fortnightly and shorter runs lose momentum for the children. If your allocation only reaches half the program this year, book a starter block, which is the set-up visit and the first eight program weeks, and complete the program in your next Preschool Boost plan.</p></div></details>
-      <details><summary>Can we hold dates before our Preschool Boost plan is approved?</summary><div class="a"><p>Yes. We pencil dates in with your provisional booking and confirm once your plan is approved. Nothing is invoiced until you confirm in writing.</p></div></details>
-      <details><summary>Our group is bigger than ten children. Does that matter?</summary><div class="a"><p>The program works best with 8 to 10 children at a similar stage of play. With two educators in the room we can work with up to about 14. A whole room of 20 or more needs to be split, and we can help you choose.</p></div></details>
-      <details><summary>Can staff who miss a training unit catch up?</summary><div class="a"><p>Yes. We send the slides ahead of time so they can review them before the next supervision session, and with the consent of everyone in the room a unit can be recorded for staff who could not attend.</p></div></details>
-      <details><summary>What do we get for our Preschool Boost reporting?</summary><div class="a"><p>An end-of-program summary, attendance records, CPD certificates for educators and certificates for the children in the Learn to Play group.</p></div></details>
-      <details><summary>Does this count as on-menu spending for a Flying Start partner service?</summary><div class="a"><p>Yes. All three are approved items on the OECD Preschool Boost Menu, listed until June 2028, so they count toward the on-menu share of your allocation. Individual child assessment or therapy is outside the scope of Preschool Boost, and we do not offer it under this funding.</p></div></details>
-      <details><summary>Can we use allied health supports for one child?</summary><div class="a"><p>No. Preschool Boost funds group and capacity-building work, so our therapists work with groups of children and with your educators. A child who needs individual assessment or therapy is referred through their family and the NDIS or Medicare, outside Preschool Boost.</p></div></details>
-      <details><summary>Who delivers the programs?</summary><div class="a"><p>AkindaCo’s multidisciplinary team of therapists, counsellors and developmental educators, all with current Working with Children Checks, and covered by public liability and professional indemnity insurance. You will have a named Preschool Boost coordinator at hello@akindaco.com for the whole program.</p></div></details>
-      <details><summary>Will prices change?</summary><div class="a"><p>The 2027 rates are already shown above. They are our 2026 rates indexed by CPI. A quote holds its price for 30 days.</p></div></details>
-    </div>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="container">
-    <h2>Ready to plan your Preschool Boost year?</h2>
-    <p>Send a booking request and we will come back with a quote and provisional dates within two business days. Or book a free call and we will plan it with you.</p>
-    <div class="btnrow">
-      <a class="btn light" href="https://forms.gle/9hzaz4AjJAcRk25j7">Send a booking request</a>
-      <a class="btn light ghost" href="https://calendly.com/akindaco/preschool-boost-discovery-call">Book a free 30-minute call</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div>
-      <p><strong>AkindaCo</strong> · <a href="mailto:hello@akindaco.com">hello@akindaco.com</a> · <a href="tel:+61870815886">08 7081 5886</a> · <a href="https://www.akindaco.com/">akindaco.com</a><br />North Adelaide and Salisbury · ABN 75 665 349 584 · Preschool Boost coordinator: hello@akindaco.com</p>
-      <p>AkindaCo acknowledges that the Kaurna people, the traditional custodians of the land on which we live and work, have always been creatively expressing, supporting and caring for community on these lands. We pay our respects to Elders past and present and recognise that sovereignty was never ceded.</p>
-    </div>
-    <div>
-      <div class="lockup"><div class="ph" id="lockup-placeholder">Government of South Australia and Flying Start lock-up goes here</div></div>
-      <p>AkindaCo is an approved supplier on the Preschool Boost Menu of the Office for Early Childhood Development, Government of South Australia.</p>
-      <p><a href="https://www.akindaco.com/discover-more/preschool-boost-atcd">Training on akindaco.com</a> · <a href="https://www.akindaco.com/discover-more/preschool-boost-learn-to-play">Learn to Play on akindaco.com</a></p>
-    </div>
-  </div>
-</footer>
-
-<script>
-  // One place for every price on the page. Values are ex GST.
-  const PRICES = {
-    year2026: { hourly: 285, atcdUnit: 855, atcdUnitSup: 1282.5, atcdSeries: 5130, atcdSeriesSup: 7695, supervision: 427.5, l2pVisit: 570, l2pProgram: 10260, l2pStarter: 5130, alliedHourly: 194 },
-    year2027: { hourly: 295, atcdUnit: 887, atcdUnitSup: 1330, atcdSeries: 5322, atcdSeriesSup: 7980, supervision: 443, l2pVisit: 591, l2pProgram: 10638, l2pStarter: 5319, alliedHourly: 201 }
-  };
-  const ROWS = [
-    ["Training unit (3 hours)", "atcdUnit"],
-    ["Training unit plus one group supervision", "atcdUnitSup"],
-    ["Full training series (6 units)", "atcdSeries", "total"],
-    ["Full series plus 6 group supervisions", "atcdSeriesSup", "total"],
-    ["Educator group supervision (90 minutes, up to 6 educators)", "supervision"],
-    ["Learn to Play, per weekly visit", "l2pVisit"],
-    ["Learn to Play program: set-up visit plus 17 program weeks (18 visits)", "l2pProgram", "total"],
-    ["Learn to Play starter block: set-up plus program weeks 1 to 8 (the first half; complete it in your next plan)", "l2pStarter", "sub"],
-    ["Allied health supports, per hour", "alliedHourly"],
-    ["Mentoring, in-room modelling or co-facilitation, per hour", "hourly"],
-    ["Travel beyond 10 km of North Adelaide or Salisbury, per hour, pro-rated", "hourly"]
-  ];
-  const fmt = v => Number.isInteger(v) ? v.toLocaleString("en-AU") : v.toLocaleString("en-AU", {minimumFractionDigits: 2, maximumFractionDigits: 2});
-  const tbody = document.querySelector("#pricetable tbody");
-  for (const [label, key, cls] of ROWS) {
-    const tr = document.createElement("tr");
-    if (cls) tr.className = cls;
-    tr.innerHTML = "<td>" + label + "</td><td class=\"n\">$" + fmt(PRICES.year2026[key]) + "</td><td class=\"n\">$" + fmt(PRICES.year2027[key]) + "</td>";
-    tbody.appendChild(tr);
-  }
-  document.querySelectorAll("[data-price]").forEach(el => {
-    const raw = el.dataset.price;
-    const year = raw.endsWith("27") ? "year2027" : "year2026";
-    const key = raw.replace(/27$/, "").replace("Bare", "");
-    el.textContent = fmt(PRICES[year][key]);
-  });
-  const hdr = document.querySelector(".site-header");
-  addEventListener("scroll", () => hdr.classList.toggle("scrolled", scrollY > 8), {passive: true});
-</script>
+  <footer>
+    <p><strong>AkindaCo</strong> · <a href="mailto:hello@akindaco.com">hello@akindaco.com</a> · <a href="tel:+61870815886">08 7081 5886</a> · <a href="https://www.akindaco.com/">akindaco.com</a><br />North Adelaide and Salisbury · ABN 75 665 349 584</p>
+    <p>AkindaCo is an approved supplier on the Preschool Boost Menu of the Office for Early Childhood Development, Government of South Australia.</p>
+    <p>AkindaCo acknowledges the Kaurna people, the traditional custodians of the land on which we live and work. We pay our respects to Elders past and present and recognise that sovereignty was never ceded.</p>
+  </footer>
+</div>
 </body>
 </html>
